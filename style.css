@@ -1,0 +1,156 @@
+@import "../omarchy/current/theme/waybar.css";
+
+* {
+    color: @foreground;
+
+    border: none;
+    border-radius: 0px;
+    min-height: 0px;
+    font-family: JetBrainsMono Nerd Font;
+    font-size: 12px;
+}
+
+window#waybar {
+    background: transparent;
+    margin-top: 10px;
+}
+
+window#waybar.empty #window {
+    background: transparent;
+    color: transparent;
+    padding: 0px;
+    margin-left: 5px;
+    transition: all 0.5s ease;
+}
+
+mpris.empty {
+    background: transparent;
+}
+
+#workspaces button {
+    all: initial;
+    padding: 0px 6px;
+    margin: 0px 1.5px;
+    min-width: 9px;
+}
+
+#workspaces button.empty {
+    opacity: 0.5;
+}
+
+#backlight,
+#custom-weather,
+#memory,
+#mpris,
+#window,
+#tray,
+#cpu,
+#battery,
+#network,
+#bluetooth,
+#pulseaudio,
+#custom-visualizer,
+#custom-update {
+    background-color: @background;
+    min-width: 12px;
+
+    border-radius: 10px;
+    padding: 0px 10px;
+    margin: 0px 0px 0px 5px;
+}
+
+#custom-expand-icon {
+    margin-right: 7px;
+}
+
+#custom-weather {
+    margin-right: 5px;
+}
+
+tooltip {
+    padding: 2px;
+    border-radius: 10px;
+}
+
+#custom-visualizer {
+    letter-spacing: 1px;
+}
+
+#custom-update {
+    font-size: 10px;
+}
+
+#clock {
+    background-color: @background;
+    border-radius: 10px;
+    padding: 0px 10px 0px 10px;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+#custom-screenrecording-indicator,
+#custom-idle-indicator,
+#custom-notification-silencing-indicator {
+    min-width: 12px;
+    margin-left: 5px;
+    margin-right: 0px;
+    font-size: 10px;
+    padding-bottom: 1px;
+}
+
+#custom-screenrecording-indicator.active {
+    color: #a55555;
+}
+
+/* EXTRA FIX */
+#workspaces {
+    background-color: @background;
+    border-radius: 10px;
+    margin-left: 5px;
+    padding: 0px 5px 0px 5px;
+}
+
+#tray-expander {
+    background-color: @background;
+    border-radius: 10px;
+    padding: 0px 0px 0px 10px;
+}
+
+#pulseaudio {
+    padding: 0px 15px 0px 10px;
+}
+
+#tray {
+    margin: 0px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .active {
+    -gtk-icon-effect: highlight;
+}
+
+#mpris {
+    margin-right: 5px;
+}
+
+#network.icon {
+    padding: 0px 13px 0px 9px;
+}
+
+#pulseaudio.muted,
+#bluetooth.disabled,
+#network.disconnected,
+#battery.warning,
+#battery.critical {
+    color: #bf616a;
+}
+
+#custom-idle-indicator.active,
+#custom-notification-silencing-indicator.active {
+    color: #a55555;
+}
