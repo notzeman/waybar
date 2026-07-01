@@ -262,7 +262,7 @@
     "format": "󰖟",
     "interval": 0,
     "tooltip": false,
-    "on-click": "omarchy-launch-floating-terminal-with-presentation sudo nethogs wlan0",
+    "on-click": "omarchy-launch-floating-terminal-with-presentation sudo ~/.config/waybar/scripts/nethogs.sh",
   },
   "mpris": {
     "format": "{player_icon} {artist} - {title}",
